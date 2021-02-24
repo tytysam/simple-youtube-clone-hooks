@@ -8,6 +8,7 @@ I built this simple app in order to practice my understanding of the following t
 - Accessing and utilizing Google's Youtube Data API
 - Building an app using class-based components rather than functional components
 - Leveraging state and lifecycle methods SANS hooks
+- Dynamic rendering based on state
 - General styling with Semantic-UI
 
 See the live app <a href="https://tcs-simple-youtube-clone.netlify.app/" target="_blank">here</a>.
