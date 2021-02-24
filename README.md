@@ -4,9 +4,10 @@ Simple react-based app that takes user input in a search field and returns multi
 
 I built this simple app in order to practice my understanding of the following topics:
 
-- useState and useEffect hooks
-- Making an API call with Axios
-- Structuring my own data models
-- API setup and authorization through Google
+- Crafting controlled forms
+- Accessing and utilizing Google's Youtube Data API
+- Building an app using class-based components rather than functional components
+- Leveraging state and lifecycle methods SANS hooks
+- General styling with Semantic-UI
 
-See live app <a href="https://tcs-simple-language-translator.netlify.app/" target="_blank">here</a>.
+See the live app <a href="https://tcs-simple-youtube-clone.netlify.app/" target="_blank">here</a>.
