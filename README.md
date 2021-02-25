@@ -12,4 +12,4 @@ I built this simple app in order to practice my understanding of the following t
 - Making calls with Axios
 - Styling content using Semantic-UI
 
-See the live app <a href="https://tcs-simple-youtube-clone.netlify.app/" target="_blank">here</a>.
+See the live app <a href="https://tcs-simple-youtube-clone.netlify.app/" target="_blank" >here</a>.

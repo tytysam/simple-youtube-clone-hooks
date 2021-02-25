@@ -10,7 +10,7 @@ const VideoDetail = ({ video }) => {
 
   return (
     <div className="video-player-container">
-      <div className="ui embed">
+      <div className="ui embed" id="video-player">
         <iframe title="Video Player" src={videoSRC} />
       </div>
       <div className="ui segment video-info-container">
@@ -20,9 +20,13 @@ const VideoDetail = ({ video }) => {
         <a
           href={`https://youtube.com/watch?v=${video.id.videoId}`}
           target="_blank"
-          style={{ color: "#202020", fontWeight: "bold" }}
+          rel="noreferrer"
+          style={{
+            color: "#FF0000",
+            fontWeight: "bold",
+          }}
         >
-          <p>Watch on Youtube</p>
+          <p style={{ marginLeft: "15px" }}>Watch on Youtube</p>
         </a>
       </div>
     </div>
