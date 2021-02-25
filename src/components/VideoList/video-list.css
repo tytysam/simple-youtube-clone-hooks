@@ -1,0 +1,25 @@
+.video-list-container {
+  margin-top: 75px;
+}
+
+.back-to-top {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.back-to-top-text {
+  color: #202020;
+  text-decoration: none;
+}
+
+.back-to-top-text:hover {
+  color: #202020;
+  text-decoration: underline;
+}
+
+.back-to-top-text:visited {
+  color: #202020;
+}
