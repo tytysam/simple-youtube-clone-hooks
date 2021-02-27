@@ -14,7 +14,7 @@ const useVideos = () => {
     setVideos(data.items);
   };
 
-  return { videos, search };
+  return [videos, search];
 };
 
 export default useVideos;

@@ -8,6 +8,13 @@ I built this simple app in order to practice my understanding of the following t
 
 - Refactoring a previous build from class-based components (and accompanying state + lifecycle methods) to a functional-component-based application
 
+- Refactoring from state to useState
+- Refactoring from lifecycle methods to ~useEffect
+- Building custom hooks
+- Extracting video fetching logic to a custom hook
+
+Additionally, in building the original core of the app, I was focused on:
+
 - Crafting controlled forms
 - Accessing and utilizing Google's Youtube Data API
 - Leveraging state and lifecycle methods SANS hooks
