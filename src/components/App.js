@@ -1,38 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchBar from "./SearchBar.js";
 import VideoList from "./VideoList/VideoList.js";
 import VideoDetail from "./VideoDetail/VideoDetail.js";
 import youtube from "../apis/youtube.js";
 
-class App extends React.Component {
-  state = { videos: [], selectedVideo: null };
+const App = () => {
+  const [videos, setVideos] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
-  onTermSubmit = async (term) => {
-    const response = await youtube.get("/search", {
+  const onTermSubmit = async (term) => {
+    const { data } = await youtube.get("/search", {
       params: {
         q: term,
       },
     });
 
-    this.setState({ videos: response.data.items });
+    setVideos(data.items);
   };
 
-  onVideoSelect = (video) => {
-    this.setState({ selectedVideo: video });
-  };
-
-  render() {
-    return (
-      <div className="ui container">
-        <SearchBar onTermSubmit={this.onTermSubmit} />
-        <VideoDetail video={this.state.selectedVideo} />
-        <VideoList
-          videos={this.state.videos}
-          onVideoSelect={this.onVideoSelect}
-        />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="ui container">
+      <SearchBar onTermSubmit={onTermSubmit} />
+      <VideoDetail video={selectedVideo} />
+      <VideoList videos={videos} onVideoSelect={setSelectedVideo} />
+    </div>
+  );
+};
 
 export default App;
