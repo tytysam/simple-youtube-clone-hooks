@@ -1,6 +1,6 @@
 # Youtube Video Player + Search App | Hooks Refactor
 
-_(note: This project is a refactor from a previous iteration of the same web widget. View the original version, built using class-based components + lifecycle methods <a href="https://tcs-simple-youtube-clone.netlify.app/">here</a>)_
+_(note: This project is a refactor from a previous iteration of the same web widget. View the original version, built using class-based components + lifecycle methods <a href="https://github.com/tytysam/simple-youtube-clone/">here</a>)_
 
 Simple React-based app that takes user input in a search field and returns multiple videos from Youtube based on the search terms. User can play video in video component, or can select a different video from the search results to the right of the video player. This app utilizes the public Youtube Data API to display search results.
 
